@@ -109,6 +109,10 @@ Following the steps in the [Add the Proxy](https://blog.zabbix.com/monitoring-ku
 ![](images/AddZabbixProxy082723.png)
 
 
+## Create host named Kubernetes Nodes
+Go to the zabbix template repository and download the template [Kubernetes nodes by HTTP](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/app/kubernetes_http/kubernetes_nodes_http/template_kubernetes_nodes.yaml).  Be careful to select the one for the correct version. Download this file and import it at Configuration->Templates->Import Templates.
+
+![](images/ImportKubernetesNodeTemplate082723.png)
 
 
 
