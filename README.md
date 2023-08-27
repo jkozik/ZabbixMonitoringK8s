@@ -103,6 +103,11 @@ Key fields:  eyJhbGciOiJSUzI1NiIsIm... and https://192.168.100.172:6443
 
 For me the access token was 952 characters.
 
+## Add the proxy to the Zabbix Server
+Following the steps in the [Add the Proxy](https://blog.zabbix.com/monitoring-kubernetes-with-zabbix/25055/#add-the-proxy) section, go into the zabbix dashboard, Administration->Proxies. Add a proxy called zabbix-proxy (name was specified in the helm chart values file.
+
+![](images/AddZabbixProxy082723.png)
+
 
 
 
