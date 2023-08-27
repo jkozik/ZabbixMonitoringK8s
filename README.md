@@ -126,6 +126,22 @@ On the zabbix server create a new host called Kubernetes Nodes, at Configuration
 The proxy needs to know the URL to the cluster and the access token.  Set the MACROS $KUBE.API.TOKEN and 
 $KUBE.API.URL
 ![](images/SetTokenValues082723.png)
+C
+## Verify 
+At this point the host started pulling in data from the nodes in my cluster.
+
+###I checked the log file:
+```
+[jkozik@dell2 ~]$ kubectl -nmonitoring logs pod/zabbix-proxy-659685cbdf-9c9dd
+159:20230826:140420.925 received configuration data from server at "linode3.kozik.net", datalen 21252
+159:20230826:140521.010 received configuration data from server at "linode3.kozik.net", datalen 204124
+159:20230826:140621.242 received configuration data from server at "linode3.kozik.net", datalen 204124
+159:20230826:140721.453 received configuration data from server at "linode3.kozik.net", datalen 204124
+...
+
+```
+### Check Latest Data for Kubernetes Nodes
+![](KubeNodesLatestData082723.png)
 
 
 
