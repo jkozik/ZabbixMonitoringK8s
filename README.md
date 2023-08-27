@@ -130,7 +130,7 @@ C
 ## Verify 
 At this point the host started pulling in data from the nodes in my cluster.
 
-###I checked the log file:
+### I checked the log file:
 ```
 [jkozik@dell2 ~]$ kubectl -nmonitoring logs pod/zabbix-proxy-659685cbdf-9c9dd
 159:20230826:140420.925 received configuration data from server at "linode3.kozik.net", datalen 21252
