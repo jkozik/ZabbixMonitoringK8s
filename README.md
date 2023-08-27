@@ -125,7 +125,7 @@ On the zabbix server create a new host called Kubernetes Nodes, at Configuration
 ### Set URL and Token values
 The proxy needs to know the URL to the cluster and the access token.  Set the MACROS $KUBE.API.TOKEN and 
 $KUBE.API.URL
-![](images/SetTokenValues082723)
+![](images/SetTokenValues082723.png)
 
 
 
